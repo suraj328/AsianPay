@@ -2,6 +2,7 @@ package app.mobile.asianpay;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,8 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(login_activity.this, "Login clicked", Toast.LENGTH_SHORT).show();
+                Intent intent1  = new Intent(login_activity.this,Register.class);
+                startActivity(intent1);
             }
         });
         forgetBtn.setOnClickListener(new View.OnClickListener() {
